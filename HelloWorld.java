@@ -1,11 +1,11 @@
-public class HelloWorld {
-    public static void main(final String[] args) {
-        Log.printMessage("Hello World!!");
-    }
-}
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-class Log {
-    public static void printMessage(final String message) {
-        System.out.printf("[%tF %<tT] %s%n", System.currentTimeMillis(), message);
+public class HelloWorld {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(HelloWorld.class);
+
+    public static void main(final String[] args) {
+        LOGGER.debug("Hello World!!");
     }
 }
