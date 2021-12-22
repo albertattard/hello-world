@@ -5,6 +5,7 @@
 
 # Ignore Java classes
 /*.class
+/*.jar
 
 # Ignore Operating System files
 **/.DS_Store
