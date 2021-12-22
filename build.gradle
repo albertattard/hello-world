@@ -1,0 +1,22 @@
+plugins {
+    id "application"
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+application {
+    getMainClass().set("HelloWorld")
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    /* Logging */
+    implementation "ch.qos.logback:logback-classic:1.2.7"
+}
