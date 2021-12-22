@@ -1,0 +1,10 @@
+# Ignore IntelliJ specific files
+/.idea
+/out
+/*.iml
+
+# Ignore Java classes
+/*.class
+
+# Ignore Operating System files
+**/.DS_Store
